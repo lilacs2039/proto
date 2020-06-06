@@ -28,7 +28,7 @@ def init(sub_dir=""):
     sns.set_style(style="whitegrid")
     plt.rcParams.update({
       'font.size' : _fontsize
-      ,'font.family' : 'Meiryo' if os.name == 'nt'   # Colabでは日本語フォントがインストールされてないので注意
+      ,'font.family' : 'Meiryo' if os.name == 'nt' else ''  # Colabでは日本語フォントがインストールされてないので注意
       ,'figure.figsize' : [size_inch, _h_inch]  #[20.0, 10.0]
       ,'figure.dpi' : _dpi  #300
       ,'savefig.dpi' : _dpi
